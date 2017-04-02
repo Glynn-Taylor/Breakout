@@ -6,8 +6,7 @@ A breakout game with several engine features such as state handling, an entity-c
 ## Windows 7
 1.  Install [Visual Studio 2015](https://www.visualstudio.com)
 2.	Open Visual Studio and Reconfigure additional include and library directories
-3. 	You may need to install libpng, either through [vcpkg](https://github.com/Microsoft/vcpkg) or by building zlib and libpng 
-4.  Build and run the project
+3.  Build and run the project
 
 ## Linux
 1.  Get a copy of the source code, either by cloning this repository, or by
