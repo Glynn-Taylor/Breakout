@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D654C56F-1B13-4881-9C3C-D65371A06C24}</ProjectGuid>
+    <RootNamespace>Breakout</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\ApexRUI\Documents\Visual Studio 2015\Projects\Breakout\Breakout\lib;C:\Users\ApexRUI\Documents\Visual Studio 2015\Projects\Breakout\Breakout\include\GL;C:\Users\ApexRUI\Documents\Visual Studio 2015\Projects\Breakout\Breakout\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>freeglut.lib;glew32.lib;libpngd.lib;libpng.lib;zlibstatd.lib;zlibstat.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\ApexRUI\Documents\Visual Studio 2015\Projects\Breakout\Breakout\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\ApexRUI\Documents\Visual Studio 2015\Projects\Breakout\Breakout\lib;C:\Users\ApexRUI\Documents\Visual Studio 2015\Projects\Breakout\Breakout\include\GL;C:\Users\ApexRUI\Documents\Visual Studio 2015\Projects\Breakout\Breakout\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>freeglut.lib;glew32.lib;libpngd.lib;libpng.lib;zlibstatd.lib;zlibstat.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\ApexRUI\Documents\Visual Studio 2015\Projects\Breakout\Breakout\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Atari2DState.hpp" />
+    <ClInclude Include="Atari3DState.hpp" />
+    <ClInclude Include="Ball.hpp" />
+    <ClInclude Include="BoxCollider.hpp" />
+    <ClInclude Include="Brick.hpp" />
+    <ClInclude Include="BrickWall.hpp" />
+    <ClInclude Include="Chunk.hpp" />
+    <ClInclude Include="Collider.hpp" />
+    <ClInclude Include="Colours.hpp" />
+    <ClInclude Include="ControlsState.hpp" />
+    <ClInclude Include="CuboidRenderer.hpp" />
+    <ClInclude Include="Display.hpp" />
+    <ClInclude Include="GameObject.hpp" />
+    <ClInclude Include="GameOverState.hpp" />
+    <ClInclude Include="GeometryCreator.hpp" />
+    <ClInclude Include="MenuState.hpp" />
+    <ClInclude Include="Paddle.hpp" />
+    <ClInclude Include="png_load.hpp" />
+    <ClInclude Include="Renderer.hpp" />
+    <ClInclude Include="RigidBody.hpp" />
+    <ClInclude Include="Scene.hpp" />
+    <ClInclude Include="Scoring.hpp" />
+    <ClInclude Include="Screen.hpp" />
+    <ClInclude Include="Sprite2D.hpp" />
+    <ClInclude Include="SpriteRenderer.hpp" />
+    <ClInclude Include="Starfield.hpp" />
+    <ClInclude Include="State.hpp" />
+    <ClInclude Include="TextRenderer.hpp" />
+    <ClInclude Include="TickableObject.hpp" />
+    <ClInclude Include="UIRenderer.hpp" />
+    <ClInclude Include="VictoryState.hpp" />
+    <ClInclude Include="Wall.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="324-breakout.cpp" />
+    <ClCompile Include="Atari2DState.cpp" />
+    <ClCompile Include="Atari3DState.cpp" />
+    <ClCompile Include="Ball.cpp" />
+    <ClCompile Include="BoxCollider.cpp" />
+    <ClCompile Include="Brick.cpp" />
+    <ClCompile Include="BrickWall.cpp" />
+    <ClCompile Include="Chunk.cpp" />
+    <ClCompile Include="ControlsState.cpp" />
+    <ClCompile Include="CuboidRenderer.cpp" />
+    <ClCompile Include="GameOverState.cpp" />
+    <ClCompile Include="GeometryCreator.cpp" />
+    <ClCompile Include="MenuState.cpp" />
+    <ClCompile Include="Paddle.cpp" />
+    <ClCompile Include="png_load.cpp" />
+    <ClCompile Include="RigidBody.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="Sprite2D.cpp" />
+    <ClCompile Include="SpriteRenderer.cpp" />
+    <ClCompile Include="Starfield.cpp" />
+    <ClCompile Include="TextRenderer.cpp" />
+    <ClCompile Include="UIRenderer.cpp" />
+    <ClCompile Include="VictoryState.cpp" />
+    <ClCompile Include="Wall.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
